@@ -13,6 +13,9 @@ set ruler
 set number
 set cursorline
 
+filetype on
+filetype plugin on
+
 "Set mapleader
 let mapleader = ","
 
