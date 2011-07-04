@@ -3,7 +3,28 @@
 	url = https://github.com/altercation/vim-colors-solarized.git
 [submodule "bundle/vim_django"]
 	path = bundle/vim_django
-	url = https://github.com/vim-scripts/vim_django.git
+	url = https://github.com/vim-scripts/vim_django
 [submodule "bundle/pyflakes"]
 	path = bundle/pyflakes
 	url = https://github.com/vim-scripts/pyflakes.vim.git
+[submodule "bundle/python_vim"]
+	path = bundle/python_vim
+	url = https://github.com/vim-scripts/python.vim.git
+[submodule "bundle/python_vasiliev"]
+	path = bundle/python_vasiliev
+	url = https://github.com/vim-scripts/python.vim--Vasiliev.git
+[submodule "bundle/pydoc"]
+	path = bundle/pydoc
+	url = https://github.com/vim-scripts/pydoc.vim.git
+[submodule "bundle/python-folding"]
+	path = bundle/python-folding
+	url = https://github.com/vim-scripts/Efficient-python-folding.git
+[submodule "django_vim"]
+	path = django_vim
+	url = https://github.com/vim-scripts/django.vim.git
+[submodule "bundle/django_vim"]
+	path = bundle/django_vim
+	url = https://github.com/vim-scripts/django.vim.git
+[submodule "bundle/pythononcomplete"]
+	path = bundle/pythononcomplete
+	url = https://github.com/vim-scripts/pythoncomplete.git

@@ -8,17 +8,26 @@ call pathogen#helptags()
 """"""""""""""""""""""""""""""""""""""
 " general settings
 """"""""""""""""""""""""""""""""""""""
+set nocompatible
 syntax on
 set ruler
 set number
 set cursorline
 
+set guioptions=T
 filetype on
 filetype plugin on
 
 "Set mapleader
 let mapleader = ","
+" On OSX
+vmap <C-c> y:call system("pbcopy", getreg("\""))<CR>
+nmap <C-v> :call setreg("\"",system("pbpaste"))<CR>p
 
+autocmd BufReadPost *
+     \ if line("'\"") > 0 && line("'\"") <= line("$") |
+     \ exe "normal g`\"" |
+     \ endif
 
 """""""""""""""""""""""""""""""""""""
 " Setup vim-colors-solarized
@@ -28,6 +37,11 @@ colorscheme solarized
 " keymap
 call togglebg#map("<C-S-b>")
 
+""""""""""""""""""""""""""""""""""
+" Setup vim_django
+"""""""""""""""""""""""""""""""""
+map <Leader>dt :VimDjangoCommandTTemplate<CR> 
+map <Leader>da :VimDjangoCommandTApp<CR> 
 
 """"""""""""""""""""""""""""""""""
 " shortcuts for vimrc
