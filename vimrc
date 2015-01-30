@@ -93,6 +93,29 @@ map <Leader>h <Plug>(easymotion-linebackward)
 
 let g:EasyMotion_startofline = 0 " keep cursor colum when JK motion
 
+"""""""""""""""""""""""""""""""""
+" set ctrlp
+"""""""""""""""""""""""""""""""""
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
+let g:ctrlp_working_path_mode = 'ra'
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.pyc,*.7z,*.rar     " MacOSX/Linux
+
+let g:ctrlp_custom_ignore = {
+  \ 'dir':  '\v[\/]\.(git|hg|svn)$',
+  \ 'file': '\v\.(exe|so|dll|jpg|png|gif|class)$',
+  \ }
+
+"""""""""""""""""""""""""""""""""
+" set taglist
+"""""""""""""""""""""""""""""""""
+let Tlist_Show_One_File = 1
+let Tlist_Exit_OnlyWindow = 1
+let Tlist_Inc_Winwidth = 0
+let Tlist_Use_Right_Window = 1
+let Tlist_Ctags_Cmd = '/usr/local/bin/ctags'
+nmap <silent> <leader>tt <ESC>:TlistToggle<CR>
+
 """"""""""""""""""""""""""""""""""
 " shortcuts for vimrc
 """"""""""""""""""""""""""""""""""

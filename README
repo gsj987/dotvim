@@ -23,8 +23,9 @@ This dotvim is plan to support python and django, and maybe java or android codi
 * fugitive.vim: A Git wrapper so awesome, usage: https://github.com/tpope/vim-fugitive
 * vim-indent-guides: A Vim plugin for visually displaying indent levels in code.
 * vim-easymotion: EasyMotion provides a much simpler way to use some motions in vim. usage: https://github.com/Lokaltog/vim-easymotion
-* command-t: Opening files and buffers with a minimal number of keystrokes, usage: https://github.com/wincent/Command-T.
 * LargeFile: Speedup vim to open large files.
+* ag.vim: Vim plugin for the_silver_searcher.
+* taglist.vim: Source code browser.
 
 ## keyshorts
 * <C-c>: copy text to clipboard (OSX only).
