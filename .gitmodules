@@ -1,9 +1,6 @@
 [submodule "bundle/solarized"]
 	path = bundle/solarized
 	url = https://github.com/altercation/vim-colors-solarized.git
-[submodule "bundle/vim_django"]
-	path = bundle/vim_django
-	url = https://github.com/vim-scripts/vim_django
 [submodule "bundle/pyflakes"]
 	path = bundle/pyflakes
 	url = https://github.com/vim-scripts/pyflakes.vim.git
@@ -19,9 +16,6 @@
 [submodule "bundle/python-folding"]
 	path = bundle/python-folding
 	url = https://github.com/vim-scripts/Efficient-python-folding.git
-[submodule "django_vim"]
-	path = django_vim
-	url = https://github.com/vim-scripts/django.vim.git
 [submodule "bundle/django_vim"]
 	path = bundle/django_vim
 	url = https://github.com/vim-scripts/django.vim.git

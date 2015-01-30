@@ -1,10 +1,10 @@
-#Yet another dotvim and for gsj987.
+# Yet another dotvim and for gsj987.
 
 This dotvim is plan to support python and django, and maybe java or android coding.
 
 ## plugin list:
+
 * django_vim: Html highlight for Django HTML templates, usage: ":setfiletype htmldjango"
-* vim_django: Jump to releated files of Django project, usage: <Leader>dt :VimDjangoCommandTTemplate<CR>, <Leader>da :VimDjangoCommandTApp<CR>
 * solarized: Color theme.
 * pydoc: Python documentation viewer and searcher, usage: :Pydoc foo.bar.baz, :PydocSearch foobar
 * pyflakes: A Vim plugin for checking Python code on the fly.
@@ -28,5 +28,6 @@ This dotvim is plan to support python and django, and maybe java or android codi
 * taglist.vim: Source code browser.
 
 ## keyshorts
+
 * <C-c>: copy text to clipboard (OSX only).
 * <C-v>: paste text from clipboard (OSX only).
