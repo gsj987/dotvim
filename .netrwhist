@@ -1,5 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =3
-let g:netrw_dirhist_1='/Users/gsj987/Documents/develop/hygea_api/core/models'
-let g:netrw_dirhist_2='/Users/gsj987/.vim/bundle/pyflakes/ftplugin/python/pyflakes'
-let g:netrw_dirhist_3='/Users/gsj987/.vim/ftplugin'
