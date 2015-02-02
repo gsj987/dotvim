@@ -117,6 +117,16 @@ let Tlist_Ctags_Cmd = '/usr/local/bin/ctags'
 nmap <silent> <leader>tt <ESC>:TlistToggle<CR>
 
 """"""""""""""""""""""""""""""""""
+" set tabular
+""""""""""""""""""""""""""""""""""
+if exists(":Tabularize")
+	nmap <Leader>a= :Tabularize /=<CR>
+	vmap <Leader>a= :Tabularize /=<CR>
+	nmap <Leader>a: :Tabularize /:\zs<CR>
+	vmap <Leader>a: :Tabularize /:\zs<CR>
+endif
+
+""""""""""""""""""""""""""""""""""
 " shortcuts for vimrc
 """"""""""""""""""""""""""""""""""
 " Fast reloading of the .vimrc

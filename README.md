@@ -4,12 +4,12 @@ This dotvim is plan to support python and django, and maybe java or android codi
 
 ## plugin list:
 
-* django_vim: Html highlight for Django HTML templates, usage: ":setfiletype htmldjango"
+* django\_vim: Html highlight for Django HTML templates, usage: ":setfiletype htmldjango"
 * solarized: Color theme.
 * pydoc: Python documentation viewer and searcher, usage: :Pydoc foo.bar.baz, :PydocSearch foobar
 * pyflakes: A Vim plugin for checking Python code on the fly.
 * python-folding: Plugin to fold python code, usage: "F" to toggle all folds, "f" to toggle current folds.
-* python_vasiliev: Enhanced version of the original (from vim6.1) python.vim.
+* python\_vasiliev: Enhanced version of the original (from vim6.1) python.vim.
 * pythononcomplete: Pythoncomplete omni-completion script shipped with vim 7.
 * vim-python-pep8-indent: A nicer Python indentation style for vim.
 * nerdtree: file explorer, usage: "<Leader>tp" to toggle window of nerdetree.
@@ -24,8 +24,9 @@ This dotvim is plan to support python and django, and maybe java or android codi
 * vim-indent-guides: A Vim plugin for visually displaying indent levels in code.
 * vim-easymotion: EasyMotion provides a much simpler way to use some motions in vim. usage: https://github.com/Lokaltog/vim-easymotion
 * LargeFile: Speedup vim to open large files.
-* ag.vim: Vim plugin for the_silver_searcher.
+* ag.vim: Vim plugin for the\_silver\_searcher.
 * taglist.vim: Source code browser.
+* Tabular.vim: Align declarations, equals signs, etc. usage: "<leader>a=" alien by '='
 
 ## keyshorts
 
