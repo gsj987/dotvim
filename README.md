@@ -27,6 +27,8 @@ This dotvim is plan to support python and django, and maybe java or android codi
 * ag.vim: Vim plugin for the\_silver\_searcher.
 * taglist.vim: Source code browser.
 * Tabular.vim: Align declarations, equals signs, etc. usage: "<leader>a=" alien by '='
+* vim-javascript-syntax: Enhanced JavaScript Syntax for Vim
+* vim-web-indent: js and js in html indent
 
 ## keyshorts
 

@@ -126,6 +126,11 @@ if exists(":Tabularize")
 	vmap <Leader>a: :Tabularize /:\zs<CR>
 endif
 
+""""""""""""""""""""""""""""
+" set for js
+""""""""""""""""""""""""""""
+au FileType javascript call JavaScriptFold() "enable code folding
+
 """"""""""""""""""""""""""""""""""
 " shortcuts for vimrc
 """"""""""""""""""""""""""""""""""
