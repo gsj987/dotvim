@@ -30,7 +30,8 @@ This dotvim is plan to support python and django, and maybe java or android codi
 * vim-javascript-syntax: Enhanced JavaScript Syntax for Vim
 * vim-web-indent: js and js in html indent
 * ShowMarks: provides a visual representation of the location marks.
-* vim-json: json syntex support.
+* vim-json: json syntax support.
+* vim-less: less syntax support.
 
 ## keyshorts
 
