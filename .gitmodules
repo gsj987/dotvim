@@ -76,9 +76,6 @@
 [submodule "bundle/vim-web-indent"]
 	path = bundle/vim-web-indent
 	url = https://github.com/lukaszb/vim-web-indent.git
-[submodule "bundle/ShowMark"]
-	path = bundle/ShowMark
-	url = https://github.com/vim-scripts/ShowMarks.git
 [submodule "bundle/vim-jsx"]
 	path = bundle/vim-jsx
 	url = https://github.com/mxw/vim-jsx.git
