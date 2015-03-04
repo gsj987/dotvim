@@ -50,8 +50,9 @@ let g:airline_symbols.whitespace = 'Ξ'
 """""""""""""""""""""""""""""""""""""
 " Setup vim-colors-solarized
 """"""""""""""""""""""""""""""""""""
-set background=light
+let g:solarized_termcolors=256
 colorscheme solarized
+set background=light
 " keymap
 call togglebg#map("<C-S-b>")
 
