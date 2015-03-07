@@ -150,3 +150,9 @@ map <silent> <leader>s :source ~/.vimrc<cr>
 map <silent> <leader>e :e ~/.vimrc<cr>
 " When .vimrc is edited, reload it
 autocmd! bufwritepost .vimrc source ~/.vimrc 
+
+
+"""""""""""""""""""""""""""""""""""
+" for fcitx.vim
+"""""""""""""""""""""""""""""""""""
+set ttimeoutlen=100
