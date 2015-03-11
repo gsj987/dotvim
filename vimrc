@@ -156,3 +156,8 @@ autocmd! bufwritepost .vimrc source ~/.vimrc
 " for fcitx.vim
 """""""""""""""""""""""""""""""""""
 set ttimeoutlen=100
+
+"""""""""""""""""""""""""""""""""
+" for mutt
+"""""""""""""""""""""""""""""""""
+au BufRead /tmp/mutt-* set tw=72
