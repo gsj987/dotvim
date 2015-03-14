@@ -24,8 +24,8 @@ set vb
 "Set mapleader
 let mapleader = ","
 " On OSX
-vmap <C-c> y:call system("pbcopy", getreg("\""))<CR>
-nmap <C-v> :call setreg("\"",system("pbpaste"))<CR>p
+"vmap <C-c> y:call system("pbcopy", getreg("\""))<CR>
+"nmap <C-v> :call setreg("\"",system("pbpaste"))<CR>
 
 autocmd BufReadPost *
      \ if line("'\"") > 0 && line("'\"") <= line("$") |
@@ -50,12 +50,8 @@ let g:airline_symbols.whitespace = 'Ξ'
 """""""""""""""""""""""""""""""""""""
 " Setup vim-colors-solarized
 """"""""""""""""""""""""""""""""""""
-let g:solarized_termcolors=256
-" colorscheme solarized
-colorscheme slate
-"set background=light
-" keymap
-call togglebg#map("<C-S-b>")
+let base16colorspace=256
+colorscheme base16-monokai
 
 """"""""""""""""""""""""""""""""""
 " Setup vim_django
