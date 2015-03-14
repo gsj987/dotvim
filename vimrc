@@ -26,6 +26,8 @@ let mapleader = ","
 " On OSX
 "vmap <C-c> y:call system("pbcopy", getreg("\""))<CR>
 "nmap <C-v> :call setreg("\"",system("pbpaste"))<CR>
+" On Linux
+vnoremap <C-c> "ry:call system('xclip -selection c', @r)<cr>
 
 autocmd BufReadPost *
      \ if line("'\"") > 0 && line("'\"") <= line("$") |
