@@ -126,6 +126,12 @@ if exists(":Tabularize")
 	vmap <Leader>a: :Tabularize /:\zs<CR>
 endif
 
+"""""""""""""""""""""""""""
+" set geeknote
+"""""""""""""""""""""""""""
+noremap <silent> <leader>te <ESC>:Geeknote<CR>
+let g:GeeknoteFormat="markdown"
+
 """"""""""""""""""""""""""""
 " set for js
 """"""""""""""""""""""""""""
