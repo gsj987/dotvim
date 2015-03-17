@@ -14,7 +14,7 @@ set ruler
 set number
 set cursorline
 set hls
-
+set fileencodings=ucs-bom,utf-8,gb18030,default,latin1
 
 set guioptions=T
 filetype on
