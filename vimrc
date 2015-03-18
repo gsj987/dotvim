@@ -20,6 +20,7 @@ set guioptions=T
 filetype on
 filetype plugin on
 set vb
+set formatoptions+=mM
 
 "Set mapleader
 let mapleader = ","
