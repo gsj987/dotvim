@@ -38,7 +38,7 @@ autocmd BufReadPost *
 """""""""""""""""
 " set airline
 """""""""""""""""
-let g:airline_theme = "dark"
+let g:airline_theme = "base16"
 
 if !exists('g:airline_symbols')
    let g:airline_symbols = {}
@@ -156,6 +156,13 @@ map <silent> <leader>e :e ~/.vimrc<cr>
 " When .vimrc is edited, reload it
 autocmd! bufwritepost .vimrc source ~/.vimrc 
 
+"""""""""""""""""""""""""""""""""""
+" shortcuts
+"""""""""""""""""""""""""""""""""""
+map <silent> <leader>[ :tabprevious<cr>
+map <silent> <leader>] :tabnext<cr>
+map <silent> <leader>c :tabclose<cr>
+
 
 """""""""""""""""""""""""""""""""""
 " for fcitx.vim
@@ -166,3 +173,8 @@ set ttimeoutlen=100
 " for mutt
 """""""""""""""""""""""""""""""""
 au BufRead /tmp/mutt-* set tw=72
+
+""""""""""""""
+" set less
+" """"""""""""
+autocmd BufNewFile,BufRead *.less setf less
