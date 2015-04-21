@@ -14,9 +14,21 @@ set ruler
 set number
 set cursorline
 set hls
-set fileencodings=ucs-bom,utf-8,gb18030,default,latin1
+set fileencodings=ucs-bom,utf-8,cp936,gb18030,default,latin1
+set fileencoding=utf-8
+set encoding=utf-8
+set backspace=2
+set nobackup
 
-set guioptions=T
+if has("gui_running")
+" set guioptions=T
+if has("win32")
+set guifont=YaHei_Consolas_Hybrid:h11:cANSI
+source $VIMRUNTIME/delmenu.vim
+source $VIMRUNTIME/menu.vim
+language messages zh_CN.utf-8
+endif
+endif
 filetype on
 filetype plugin on
 set vb
