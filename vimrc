@@ -19,11 +19,13 @@ set fileencoding=utf-8
 set encoding=utf-8
 set backspace=2
 set nobackup
+set nowritebackup
 
 if has("gui_running")
-" set guioptions=T
+set guioptions=T
 if has("win32")
-set guifont=YaHei_Consolas_Hybrid:h11:cANSI
+set guifont=Consolas:h10:cANSI
+set guifontwide=YaHei_Mono:h9:cGB2312
 source $VIMRUNTIME/delmenu.vim
 source $VIMRUNTIME/menu.vim
 language messages zh_CN.utf-8
@@ -55,10 +57,10 @@ let g:airline_theme = "base16"
 if !exists('g:airline_symbols')
    let g:airline_symbols = {}
 endif
-let g:airline_left_sep = '▶'
-let g:airline_right_sep = '◀'
+"let g:airline_left_sep = '▶'
+"let g:airline_right_sep = '◀'
 let g:airline_symbols.linenr = '¶'
-let g:airline_symbols.branch = '⎇'
+"let g:airline_symbols.branch = '⎇'
 let g:airline_symbols.paste = 'ρ'
 let g:airline_symbols.whitespace = 'Ξ'
 
