@@ -20,7 +20,6 @@ This dotvim is plan to support python and django, and maybe java or android codi
 * ctrlp: Full path fuzzy file, buffer, mru, tag, ... finder for Vim. usage: https://github.com/kien/ctrlp.vim
 * surround: Easily delete, change and add such surroundings in pairs.
 * vim-gitgutter: A Vim plugin which shows a git diff in the 'gutter' (sign column)
-* fugitive.vim: A Git wrapper so awesome, usage: https://github.com/tpope/vim-fugitive
 * vim-indent-guides: A Vim plugin for visually displaying indent levels in code.
 * vim-easymotion: EasyMotion provides a much simpler way to use some motions in vim. usage: https://github.com/Lokaltog/vim-easymotion
 * LargeFile: Speedup vim to open large files.
