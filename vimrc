@@ -1,3 +1,7 @@
+"""""""""""
+" set editconfig for win32
+"""""""""""
+
 """""""""""""""""""""""""""""""""""""""
 " setup Pathogen.vim
 """""""""""""""""""""""""""""""""""""""
@@ -16,6 +20,8 @@ set cursorline
 set hls
 set fileencodings=ucs-bom,utf-8,cp936,gb18030,default,latin1
 set fileencoding=utf-8
+set fileformats=unix,dos
+set fileformat=unix
 set encoding=utf-8
 set backspace=2
 set nobackup
@@ -57,10 +63,10 @@ let g:airline_theme = "base16"
 if !exists('g:airline_symbols')
    let g:airline_symbols = {}
 endif
-"let g:airline_left_sep = '▶'
-"let g:airline_right_sep = '◀'
+let g:airline_left_sep = '►'
+let g:airline_right_sep = '◄'
 let g:airline_symbols.linenr = '¶'
-"let g:airline_symbols.branch = '⎇'
+let g:airline_symbols.branch = '♆'
 let g:airline_symbols.paste = 'ρ'
 let g:airline_symbols.whitespace = 'Ξ'
 
@@ -114,7 +120,7 @@ let g:EasyMotion_startofline = 0 " keep cursor colum when JK motion
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 let g:ctrlp_working_path_mode = 'ra'
-set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.pyc,*.7z,*.rar,*/build/*,*/bower_components/*,*/node_modules/*     " MacOSX/Linux
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.pyc,*.7z,*.rar,*/build/*,*/bower_components/*,*/node_modules/*,*/platforms/*     " MacOSX/Linux
 
 let g:ctrlp_custom_ignore = {
   \ 'dir':  '\v[\/]\.(git|hg|svn)$',
@@ -128,7 +134,11 @@ let Tlist_Show_One_File = 1
 let Tlist_Exit_OnlyWindow = 1
 let Tlist_Inc_Winwidth = 0
 let Tlist_Use_Right_Window = 1
+if has("win32")
+let Tlist_Ctags_Cmd = 'D:/Vim/bin/ctags/ctags.exe'
+else
 let Tlist_Ctags_Cmd = '/usr/bin/ctags'
+endif
 nmap <silent> <leader>tt <ESC>:TlistToggle<CR>
 
 """"""""""""""""""""""""""""""""""
@@ -176,6 +186,8 @@ autocmd! bufwritepost .vimrc source ~/.vimrc
 map <silent> <leader>[ :tabprevious<cr>
 map <silent> <leader>] :tabnext<cr>
 map <silent> <leader>c :tabclose<cr>
+map <silent> <leader>ln :lnext<cr>
+map <silent> <leader>lp :lprevious<cr>
 
 
 """""""""""""""""""""""""""""""""""
@@ -192,3 +204,18 @@ au BufRead /tmp/mutt-* set tw=72
 " set less
 " """"""""""""
 autocmd BufNewFile,BufRead *.less setf less
+
+
+"""""""""""""""""""""""""""""""""""""
+" for syntastic
+"""""""""""""""""""""""""""""""""""""
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
+let g:syntastic_python_checkers = ['pyflakes']

@@ -5,9 +5,8 @@ This dotvim is plan to support python and django, and maybe java or android codi
 ## plugin list:
 
 * django\_vim: Html highlight for Django HTML templates, usage: ":setfiletype htmldjango"
-* solarized: Color theme.
+* syntastic: a syntax checking plugin for Vim that runs files through external syntax checkers and displays any resulting errors to the user. 
 * pydoc: Python documentation viewer and searcher, usage: :Pydoc foo.bar.baz, :PydocSearch foobar
-* pyflakes: A Vim plugin for checking Python code on the fly.
 * python-folding: Plugin to fold python code, usage: "F" to toggle all folds, "f" to toggle current folds.
 * python\_vasiliev: Enhanced version of the original (from vim6.1) python.vim.
 * pythononcomplete: Pythoncomplete omni-completion script shipped with vim 7.
@@ -28,7 +27,6 @@ This dotvim is plan to support python and django, and maybe java or android codi
 * Tabular.vim: Align declarations, equals signs, etc. usage: "<leader>a=" alien by '='
 * vim-javascript-syntax: Enhanced JavaScript Syntax for Vim
 * vim-web-indent: js and js in html indent
-* ShowMarks: provides a visual representation of the location marks.
 * vim-json: json syntax support.
 * vim-less: less syntax support.
 
